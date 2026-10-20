@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fruit_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/screen_padding">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <Button android:id="@+id/back_button" style="@style/FruitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/back_to_fruits" />
+        <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+        <Button android:id="@+id/language_button" style="@style/FruitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_switch" android:contentDescription="@string/language_description" android:layout_marginStart="8dp" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:paddingTop="16dp" android:paddingBottom="24dp">
+            <TextView android:id="@+id/fruit_letter" android:layout_width="112dp" android:layout_height="112dp" android:minWidth="104dp" android:padding="0dp" android:gravity="center" android:background="@drawable/letter_badge" android:textSize="64sp" android:textStyle="bold" android:textColor="@color/accent" />
+            <TextView android:id="@+id/letter_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textSize="16sp" android:textColor="@color/muted" android:layout_marginTop="8dp" />
+            <ImageView android:id="@+id/fruit_image" android:contentDescription="@null" android:layout_width="match_parent" android:layout_height="@dimen/detail_image_size" android:layout_marginTop="20dp" android:scaleType="fitCenter" />
+            <TextView android:id="@+id/fruit_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textSize="36sp" android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="16dp" />
+            <TextView android:id="@+id/fruit_pronunciation" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textSize="20sp" android:textColor="@color/ink" android:layout_marginTop="8dp" />
+            <Button android:id="@+id/listen_button" style="@style/FruitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="4dp" android:text="@string/listen_name" />
+            <TextView android:id="@+id/fruit_fact" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textSize="19sp" android:textColor="@color/muted" android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

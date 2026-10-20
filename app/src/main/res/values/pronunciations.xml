@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apple_ipa" translatable="false">/ˈæpəl/</string>
+    <string name="apple_pinyin" translatable="false">píng guǒ</string>
+    <string name="banana_ipa" translatable="false">/bəˈnænə/</string>
+    <string name="banana_pinyin" translatable="false">xiāng jiāo</string>
+    <string name="orange_ipa" translatable="false">/ˈɔːrɪndʒ/</string>
+    <string name="orange_pinyin" translatable="false">chéng zi</string>
+    <string name="grape_ipa" translatable="false">/ɡreɪp/</string>
+    <string name="grape_pinyin" translatable="false">pú tao</string>
+    <string name="strawberry_ipa" translatable="false">/ˈstrɔːberi/</string>
+    <string name="strawberry_pinyin" translatable="false">cǎo méi</string>
+    <string name="watermelon_ipa" translatable="false">/ˈwɔːtərmelən/</string>
+    <string name="watermelon_pinyin" translatable="false">xī guā</string>
+</resources>

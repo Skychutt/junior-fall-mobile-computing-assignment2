@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="@dimen/screen_padding">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="@string/app_name" android:textColor="@color/accent" android:textStyle="bold" android:textSize="18sp" />
+        <Button android:id="@+id/language_button" style="@style/FruitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_switch" android:contentDescription="@string/language_description" android:layout_marginStart="8dp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:baselineAligned="false" android:paddingTop="24dp">
+        <ScrollView android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingEnd="28dp" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="16dp">
+                    <TextView android:id="@+id/home_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/home_title" android:textColor="@color/ink" android:textSize="28sp" android:textStyle="bold" android:layout_marginTop="0dp" />
+                    <TextView android:id="@+id/home_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/home_description" android:textColor="@color/ink" android:textSize="16sp" android:layout_marginTop="12dp" />
+                </LinearLayout>
+                <ImageView android:layout_width="match_parent" android:layout_height="132dp" android:src="@drawable/textbook_cover" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1.5" android:layout_height="match_parent" android:orientation="vertical">
+            <TextView android:id="@+id/fruit_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fruit_count" android:textColor="@color/ink" android:textSize="16sp" android:layout_marginBottom="12dp" />
+            <ListView android:id="@+id/fruit_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:divider="@android:color/transparent" android:dividerHeight="12dp" android:clipToPadding="false" android:paddingBottom="8dp" android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

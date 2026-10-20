@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page">#F5F5F5</color>
+    <color name="ink">#202020</color>
+    <color name="muted">#4F4F4F</color>
+    <color name="accent">#174F91</color>
+    <color name="accent_light">#FFF1B5</color>
+    <color name="card">#FFFFFF</color>
+    <color name="outline">#707070</color>
+    <color name="orange_ink">#A94712</color>
+    <color name="cover_background">#F1F5FA</color>
+</resources>

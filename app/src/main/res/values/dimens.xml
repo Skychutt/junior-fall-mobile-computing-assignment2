@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="fruit_thumbnail">92dp</dimen>
+    <dimen name="detail_image_size">250dp</dimen>
+</resources>
