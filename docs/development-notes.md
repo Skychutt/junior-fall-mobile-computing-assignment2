@@ -1,3 +1,5 @@
+> Historical development notes. For the current submission state, see README.md: the student has not recorded the final video. Old demo references below refer only to archive/early-demo/.
+
 # Fruit Learning — Assignment 2
 
 A children’s fruit-learning Android app written in Kotlin with XML Views.

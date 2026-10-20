@@ -3,7 +3,7 @@
     <string name="app_name">Fruit Learning</string>
     <string name="home_title">Choose a fruit</string>
     <string name="home_description">Tap a picture to see the fruit name and letter.</string>
-    <string name="fruit_count">Fruit list</string>
+    <string name="fruit_count">%1$d fruits</string>
     <string name="language_switch">中文</string>
     <string name="language_description">Switch to Simplified Chinese</string>
     <string name="back_to_fruits">Back</string>
@@ -30,4 +30,5 @@
     <string name="strawberry_fact">A strawberry has tiny seeds on the outside.</string>
     <string name="watermelon">Watermelon</string>
     <string name="watermelon_fact">A watermelon has a green rind and juicy flesh.</string>
+    <string name="scroll_hint">Swipe up or down to explore</string>
 </resources>

@@ -12,6 +12,7 @@ A bilingual fruit-learning Android app for children, built with **Kotlin and XML
 ### Features
 
 - **Six fruits:** apple, banana, orange, grape, strawberry and watermelon.
+- **Clear list navigation:** the list shows the fruit count, a visible scrollbar and a localized swipe hint when scrolling is needed.
 - **Browse and learn:** illustrated ListView rows open a detail screen with a larger picture, fruit name, English initial and a short fact.
 - **Two languages:** switch between English and Simplified Chinese on either screen; the app remembers the selected language.
 - **Pronunciation guides:** American IPA on English detail pages and Mandarin pinyin with tone marks on Chinese pages.
@@ -33,6 +34,7 @@ The main screen uses a custom `ArrayAdapter` and `ListView`. Selecting a fruit s
 ```sh
 ./gradlew :app:assembleDebug
 ./gradlew :app:lintDebug
+python3 tools/package.py
 ```
 
 Android Studio generates `local.properties` for your local SDK path. Machine-specific configuration, build outputs and caches are excluded from Git.
@@ -41,13 +43,14 @@ Android Studio generates `local.properties` for your local SDK path. Machine-spe
 
 Debug build and Android Lint passed during development. Phone and tablet emulator checks covered fruit details, return navigation, language switching and persistence, offline audio, and the new phonetic text. Lint may still report non-blocking warnings.
 
-The MP4 in `deliverables/` is an **earlier three-fruit demonstration** and does not show all current features. Record a new video for final submission. The folder also contains the debug APK, screenshots, source archive and Chinese recording notes. See [development notes](docs/development-notes.md) for the original implementation and recording guidance.
+**The student’s final submission video has not been recorded yet.** A historical development demo is preserved separately in `archive/early-demo/`; it is not a student recording and must not be submitted as the final video. The folder also contains the debug APK, screenshots, source archive and Chinese recording notes. See [development notes](docs/development-notes.md) for the original implementation and recording guidance.
 
 ## 中文
 
 ### 应用功能
 
 - **六种水果：**苹果、香蕉、橙子、葡萄、草莓和西瓜。
+- **列表引导：**显示水果总数、滚动条，并在列表可滚动时显示双语滑动提示。
 - **列表与详情：**点击列表中的水果，查看大图、名称、英文首字母及简单知识介绍。
 - **中英文切换：**首页和详情页均可切换语言，重新打开应用后保留选择。
 - **注音辅助：**英文详情显示美式音标，中文详情显示带声调的拼音。
@@ -62,9 +65,9 @@ The MP4 in `deliverables/` is an **earlier three-fruit demonstration** and does 
 
 ### 运行与提交
 
-使用 Android Studio 打开项目，安装项目要求的 SDK 和工具链，完成 Gradle 同步后运行 `app`。最低支持 Android API 24，当前编译和目标 SDK 为 37。命令行构建和 Lint 检查见上方命令。
+使用 Android Studio 打开项目，安装项目要求的 SDK 和工具链，完成 Gradle 同步后运行 `app`。最低支持 Android API 24，当前编译和目标 SDK 为 37。命令行构建和 Lint 检查见上方命令。构建后运行 `python3 tools/package.py`，同步更新提交用 ZIP 和 APK；历史视频不会打包。
 
-`deliverables/` 中包含调试 APK、截图、源码压缩包和录屏说明。**现有 MP4 为早期三种水果版本**，正式提交时应重新录制，展示当前六种水果、双语发音及注音功能。仓库上传不等于课程平台提交。
+`deliverables/` 中包含调试 APK、截图、源码压缩包和录屏说明。**学生正式提交视频尚未录制**。先前开发过程生成的历史视频保存在 `archive/early-demo/`，不属于学生录制的作业视频。正式提交时应自行录制，展示当前六种水果、双语发音及注音功能。仓库上传不等于课程平台提交。
 
 ## Source guide · 代码导航
 
